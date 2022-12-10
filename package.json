@@ -1,0 +1,20 @@
+{
+  "name": "letterchat",
+  "version": "1.0.0",
+  "description": "nextgen chatapp",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && npm install && ../client && npm install && npm run build",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ange1beat/testchatapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ange1beat/testchatapp/issues"
+  },
+  "homepage": "https://github.com/ange1beat/testchatapp#readme"
+}
