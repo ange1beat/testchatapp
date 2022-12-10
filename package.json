@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd server && npm install && cd ../client/letterchat && npm install && npm run build",
-    "start": "node server/index.js && cd client/letterchat && npm start"
+    "start": "cd client/letterchat && npm start"
   },
   "repository": {
     "type": "git",
