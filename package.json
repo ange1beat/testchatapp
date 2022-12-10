@@ -4,7 +4,7 @@
   "description": "nextgen chatapp",
   "main": "index.js",
   "scripts": {
-    "build": "cd server && npm install && cd ../client/letterchat && npm install && npm start",
+    "build": "cd server && npm install && cd ../client/letterchat && npm install && npm run build",
     "start": "node server/index.js"
   },
   "repository": {
