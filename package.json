@@ -6,7 +6,6 @@
   "scripts": {
     "build": "npm i && cd server && npm install && cd ../client/letterchat && npm install && npm run build && npm start",
     "server": "node server/index.js",
-    "start": "concurrently \"npm-run-all -p build server\""
   },
   "repository": {
     "type": "git",
@@ -14,10 +13,6 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "npm-run-all": "^2.8.5",
-    "concurrently": "^7.6.0"
-  },
   "bugs": {
     "url": "https://github.com/ange1beat/testchatapp/issues"
   },
