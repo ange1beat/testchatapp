@@ -7,7 +7,7 @@
   "scripts": {
     "build": "npm i concurrently && cd server && npm install && cd ../client/letterchat && npm install && npm run build",
     "client": "cd client/letterchat && npm start",
-    "server": "nodemon server/index.js",
+    "server": "cd server && npm run start",
     "start": "concurrently \"npm run client\" \"npm run server\""
   },
   "repository": {
