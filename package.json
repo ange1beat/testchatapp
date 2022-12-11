@@ -5,7 +5,7 @@
   "description": "nextgen chatapp",
   "main": "index.js",
   "scripts": {
-    "build": "npm i concurrently && npm install babel-eslint && cd server && npm install && cd ../client/letterchat && npm install && npm run build",
+    "build": "npm i concurrently && npm i express && npm install babel-eslint && cd server && npm install && cd ../client/letterchat && npm install && npm run build",
     "start": "cd server && npm run start && cd ../client/letterchat && npm start"
   },
   "repository": {
