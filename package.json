@@ -7,7 +7,7 @@
     "build": "npm i concurrently && cd server && npm install && cd ../client/letterchat && npm install",
     "client": "cd client/letterchat && npm run build",
     "server": "node server/index.js",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "start": "npm run client"
   },
   "repository": {
     "type": "git",
