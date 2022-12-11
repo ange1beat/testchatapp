@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm i concurrently && npm i express && npm install babel-eslint && cd server && npm install && cd ../client/letterchat && npm install && npm run build",
-    "start": "concurrently --kill-others \"cd server && npm run start\" \"cd client/letterchat && npm start\""
+    "start1": "cd server && npm run start",
+    "start2": "cd client/letterchat && npm start"
   },
   "repository": {
     "type": "git",
