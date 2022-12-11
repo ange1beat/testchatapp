@@ -1,11 +1,11 @@
 const server = require("http").createServer();
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://stella-letter.onrender.com",
+    origin: "*",
   },
 });
 
-const PORT = 10000;
+const PORT = 3001;
 const NEW_CHAT_MESSAGE_EVENT = "newChatMessage";
 
 io.on("connection", (socket) => {
