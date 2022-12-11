@@ -1,12 +1,18 @@
-const server = require("http").createServer();
-const io = require("socket.io")(server, {
-  cors: {
-    origin: "*",
-  },
+const express = require("express")
+const app = express()
+const cors = require("cors")
+const http = require('http').Server(app);
+const PORT = 4000
+const socketIO = require('socket.io')(http, {
+    cors: {
+        origin: "http://localhost:3000"
+    }
 });
 
-const PORT = process.env.PORT || 3000;
+app.use(cors())
+
 const NEW_CHAT_MESSAGE_EVENT = "newChatMessage";
+
 
 io.on("connection", (socket) => {
   console.log(`Client ${socket.id} connected`);
