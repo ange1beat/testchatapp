@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm i concurrently && cd server && npm install && cd ../client/letterchat && npm install",
-    "client": "cd client/letterchat && npm run build",
+    "client": "cd client/letterchat && npm run start",
     "server": "node server/index.js",
     "start": "npm run client"
   },
