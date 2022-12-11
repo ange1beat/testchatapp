@@ -4,8 +4,8 @@
   "description": "nextgen chatapp",
   "main": "index.js",
   "scripts": {
-    "build": "CI=false && npm i concurrently && cd server && npm install && cd ../client/letterchat && npm install && npm run build && cd ../../ && npm run start",
-    "client": "cd client/letterchat && npm start",
+    "build": "npm i concurrently && cd server && npm install && cd ../client/letterchat && npm install",
+    "client": "cd client/letterchat && npm run start",
     "server": "node server/index.js",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
